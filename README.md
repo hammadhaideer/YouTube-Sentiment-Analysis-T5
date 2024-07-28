@@ -12,21 +12,19 @@ The project involves:
 - Creating a Gradio interface for easy use
 
 ## Installation
-
 To install the required packages, run:
 
 ```bash
 pip install transformers datasets evaluate gradio youtube-transcript-api pydub
 
 ## Data Preparation
-
 Ensure you have a CSV file named dataset.csv with the following columns:
 
 URL: The YouTube video URL
 Label: The sentiment label (e.g., "positive", "negative")
 
-## Training the Model
 
+## Training the Model
 The following script trains the T5 model on your dataset and evaluates its accuracy:
 
 import torch
@@ -93,7 +91,6 @@ print(f"Model Accuracy: {accuracy:.2f}%")
 
 
 ## Gradio Interface
-
 To create a Gradio interface for the sentiment analysis model, use the following code:
 
 def sentiment_analysis(url):
@@ -112,6 +109,5 @@ iface = gr.Interface(
 
 iface.launch()
 
-## **License
-
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
