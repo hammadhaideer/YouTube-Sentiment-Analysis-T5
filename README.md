@@ -90,8 +90,16 @@ accuracy = results['eval_accuracy'] * 100
 print(f"Model Accuracy: {accuracy:.2f}%")
 
 
+
+
+
+
 ## Gradio Interface
 To create a Gradio interface for the sentiment analysis model, use the following code:
+
+
+
+
 
 def sentiment_analysis(url):
     inputs = tokenizer(url, return_tensors="pt", max_length=512, truncation=True, padding="max_length")
@@ -108,6 +116,10 @@ iface = gr.Interface(
 )
 
 iface.launch()
+
+
+
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
