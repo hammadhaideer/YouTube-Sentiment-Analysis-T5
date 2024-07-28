@@ -19,11 +19,11 @@ To install the required packages, run:
 pip install transformers datasets evaluate gradio youtube-transcript-api pydub
 
 
-## __Data Preparation
+## **Data Preparation**
 Ensure you have a CSV file named dataset.csv with the following columns:
 
 URL: The YouTube video URL
 Label: The sentiment label (e.g., "positive", "negative")
 
-## __Training the Model
+## **Training the Model**
 The following script trains the T5 model on your dataset and evaluates its accuracy:
